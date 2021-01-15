@@ -74,6 +74,9 @@ $ sudo pip3 install flask uwsgi
 
 
 
+Once you test your app you may use 
+
+$ uwsgi --socket 0.0.0.0:8081 --protocol=http -w <name of your starting point>:app
 
 
 4- For an extra layer of security install fail2ban. Fail2Ban blocks suspicious requests coming from the internet. For example, if there are too many attempts to guess the password, it will block that IP address. It can be installed by typing into terminal: $ sudo apt-get install fail2ban
